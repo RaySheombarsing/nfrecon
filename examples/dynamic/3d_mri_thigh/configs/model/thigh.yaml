@@ -1,0 +1,13 @@
+magnetization:
+  num_modes: [96,64,84,112]
+  dim_latent: 350
+  num_hidden_layers: 3
+  init_omega: 410.0
+  hidden_omega: 50.0
+
+coil_sensitivity:
+  num_modes: [64,84,96]
+  dim_latent: 350
+  num_hidden_layers: 3
+  init_omega: 350.0
+  hidden_omega: 50.0

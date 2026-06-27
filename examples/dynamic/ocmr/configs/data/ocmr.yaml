@@ -1,0 +1,13 @@
+_target_: nfrecon.data.dataset.CoilData
+data_path: ???
+data_keys:
+  kspace: ???
+  kspace_coords: ???
+  gridsize: "gridsize"
+  fov: "fov"
+  time_step: "dt"
+  scale_factor: "scale_factor"
+spatial_dim: 2
+freq_threshold: 1e-06
+time_scale: 5.5e-03
+dynamic: True

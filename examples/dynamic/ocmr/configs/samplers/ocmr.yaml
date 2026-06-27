@@ -1,0 +1,4 @@
+num_samples_per_dim:
+  discrete: [8,64,64]
+  continuous: [8,64,64]
+num_coils: null

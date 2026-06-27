@@ -1,0 +1,12 @@
+epochs: 15000
+log_freq: 100
+save_epoch: True
+save_freq: 1000
+method:
+  _target_: torch.optim.AdamW
+  lr: 8e-06
+  weight_decay: 1e-06
+scheduler:
+  _target_: torch.optim.lr_scheduler.ReduceLROnPlateau
+  factor: 0.75
+  patience: 850
