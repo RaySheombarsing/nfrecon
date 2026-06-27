@@ -1,0 +1,71 @@
+[project]
+name = "nfrecon"
+version = "0.1.0"
+description = "Model-based MRI reconstruction using Neural Field Expansions."
+readme = "README.md"
+requires-python = ">=3.11"
+
+
+authors = [
+  { name = "Ray Sheombarsing" }
+]
+
+license = { file = "LICENSE" }
+
+keywords = [
+    "Accelerated MRI",
+    "Continuous-domain modeling",
+    "Dynamic 3D MRI",
+    "Joint image-sensitivity reconstruction",
+    "Neural fields",
+    "Tensor product representations"
+]
+
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Medical Science Apps.",
+    "License :: OSI Approved :: Apache Software License",
+]
+
+
+dependencies = [
+    "hydra-core>=1.3.2",
+    "matplotlib>=3.10.9",
+    "mlflow>=3.13.0",
+    "numpy>=1.26,<2",
+    "scipy>=1.17.1",
+    "tensorboard>=2.20.0",
+    "h5py>=3.16.0",
+    "ismrmrd>=1.15.0",
+]
+
+[dependency-groups]
+dev = [
+    "pre-commit>=4.6.0",
+    "black>=26.5",
+    "ipython>=9.14",
+]
+
+[project.optional-dependencies]
+torch = [
+    "torch>=2.2.2",
+    "torchvision>=0.17.2",
+    "torchaudio>=2.2.2",
+]
+
+[tool.black]
+target-version = ["py311"]
+
+[tool.uv]
+package = true
+
+[project.scripts]
+nfrecon = "nfrecon.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["nfrecon*"]
