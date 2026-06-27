@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+title: "NFRECON: MRI Reconstruction using Neural Field Expansions"
+message: >
+  If you use this software, please cite both this repository and the associated publication.
+
+authors:
+  - family-names: Sheombarsing
+    given-names: Ray
+
+version: 0.1.0
+date-released: 2026-06-24
+
+references:
+  - type: article
+    title: "Model-based Dynamic 3D MRI Reconstruction using Neural Fields and Tensor Product Expansions"
+    authors:
+      - family-names: Sheombarsing
+        given-names: Ray
+      - family-names: van Riel
+        given-names: Max
+      - family-names: Heesterbeek
+        given-names: David
+      - family-names: van den Berg
+        given-names: Nico
+      - family-names: Sbrizzi
+        given-names: Alessandro
+    journal: arXiv
+    year: 2026
+    doi: 10.48550/arXiv.2605.08275
