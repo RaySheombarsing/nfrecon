@@ -1,0 +1,5 @@
+num_modes: ???
+dim_latent: 256
+num_hidden_layers: 3
+init_omega: 450.0
+hidden_omega: 50.0

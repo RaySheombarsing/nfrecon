@@ -1,0 +1,16 @@
+# @package _global_
+
+defaults:
+  - _self_
+  - setup: default.yaml
+  - data: default.yaml
+  - samplers: default.yaml
+  - model: default.yaml
+  - loss: default.yaml
+  - optimizer: default.yaml
+
+hydra:
+  job:
+    chdir: True
+
+seed: 1234

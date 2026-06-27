@@ -1,0 +1,7 @@
+_target_: nfrecon.loss.multicoil_loss.MulticoilLoss
+weights:
+  data_consistency: 1.0
+  dmdt: null
+  dmdx: 1.0
+  jac_coil_sense: 0.025
+threshold_kspace_obs: 1e-05

@@ -1,0 +1,3 @@
+defaults:
+  - magnetization: siren_nfe.yaml
+  - coil_sensitivity: siren_nfe.yaml
