@@ -109,15 +109,8 @@ environment.
 ### PyTorch Installation
 
 NFRECON depends on **PyTorch**, which must be installed separately due to
-platform-specific builds (CPU, CUDA, Apple Metal, etc.).
-
-For CPU-based usage, PyTorch can be installed together with NFRECON:
-
-```bash
-uv sync --extra torch
-```
-
-For GPU setups, install PyTorch manually from https://pytorch.org/.
+platform-specific builds (CPU, CUDA, Apple Metal, etc.), see 
+https://pytorch.org/ for instructions.
 
 ---
 
